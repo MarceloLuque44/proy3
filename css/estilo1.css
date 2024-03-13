@@ -2,160 +2,46 @@
 {
     background-color: firebrick;
     padding: 10px;
-    display: flex;/*
-     cuando no se especifica alguno de 
-     estos parametros toma el total del
-     dispositivo*/
-    /*
-    flex-direction: row; fila
-    flex-direction: row-reverse; fila al revez
-    
-    flex-direction: column;
-    flex-direction: column-reverse;
-    */
-    /* flex-wrap: wrap;
-    acomoda automaticamente los
-    elementos a la forma del padre
-    sin cambiar el tamanio de los elementos 
-    flex-wrap: wrap-reverse;
-    Acomoda en orden inverso
-    */
-    /* flex-wrap: wrap; */
-    /* flex-flow: row wrap;
-    esto es una combinacion del flex direction
-    y flex wrap */
-    /*
-    align-content: flex;
-     alinea los elementos dentro de la caja 
-    align-content: space-between;
-    agrega un espacio en medio
-    */
-    align-content: center;
-    align-content: space-around;
-    /* comparte el espacio equitativamente */
+    display: flex;
+    flex-wrap: wrap;
     
 }
 .contenedor1
 {
     background-color: coral;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
     width: 200px;
-    height: 300px;
-    flex-grow: 1;
+    height: 600px;
     margin: 10px;
+    flex-grow: 1;
+}
+.fila1
+{
+    display: flex;
+    flex-direction:row;
 }
 .contenedor2
 {
     background-color: blueviolet;
-    padding: 10px;
-    display: flex;
+    height: 600px;
     width: 200px;
-    height: 300px;
-    align-content: flex;
-    flex-grow: 1;
     margin: 10px;
-}
-.contenedor3
-{
-    background-color: forestgreen;
-    padding: 10px;
     display: flex;
-    width: 200px;
-    height: 300px;
+    flex-wrap: wrap;
     flex-grow: 1;
-    margin: 10px;
-}
-.caja
-{
-    background-color: aqua;
-    margin: 5px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-    width: 150px;
-    height: 100px;
-    /*display: inline-block;
-    ahora con flexbox (en el main)
-    */
-    flex-grow: 1;
-    /* las cajas crecen equitativamente,
-    el numero indica el tamanio que tendra 
-    que tiene, por ejemplo 2 tiene mayor
-    tamanio que 1 */
     
 }
 .caja1
 {
     background-color: yellowgreen;
+    flex-grow: 1;
     margin: 5px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-    width: 150px;
+    width: 100px;
     height: 100px;
-    flex-grow: 2;
-    order: 3;
-    /* cambia el orden en el que aparecen las cajas */
 }
 .caja2
 {
-    background-color: yellow;
+    background-color: yellowgreen;
     margin: 5px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-    width: 150px;
+    width: 100px;
     height: 100px;
-    flex-grow: 5;
 }
-.caja3
-{
-    background-color: rebeccapurple;
-    margin: 5px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-    width: 150px;
-    height: 100px;
-    flex-basis: 5;
-    /* usa el espacio que no ocupan las otras cajas */
-    
-}
-.caja4
-{
-    background-color: orange;
-    margin: 5px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-    width: 150px;
-    height: 100px;
-    flex-grow: 5;
-    /* usa el espacio que no ocupan las otras cajas */
-    
-}
-
-.principal2
-{
-    background-color: rgb(38, 209, 152);
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-    /* el maximo de cajas en vertical es de 12
-    por lo general, si se añaden mas no se reducira
-    por que el tamanio de la fuente es fijo */
-    
-}
-/* tres contenedores
-1ro con 4 cajas fijas
-2do con 9 flecibles
-3ro con 6 fijas
-
-el 2do que entre lo que se pueda al cambiar de disp
-1ro y 3ro que mantengan sus cajas al cambiar de disp 
-se podria usar el display inline block para que no 
-cambie
-*/
